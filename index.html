@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>yaa</h1>
+    <p id="h"></p>
+
+    <br>
+    <br>
+
+    <img src="korporacode3.png" alt="image" height="550em" width="450em">
+</center>
+    <script>
+        var h = '';
+for( var q =1; q <= 4; q++) {
+    for( var w = 0; w <= 9; w++ ) {
+        if( q==1 || q==4 || w==0 || w==9) {
+            h +='*';    
+        } else {
+            h += '&nbsp;&nbsp';
+        }
+    }
+    h +='<br>';
+}
+document.getElementById("h").innerHTML = h;
+    </script>
+</body>
+</html>
